@@ -74,7 +74,7 @@ btnAddTask.addEventListener("click", function (e) {
   e.preventDefault();
   const taskBody = inpAddTask.value;
   if (taskBody.length > 0) {
-    tasks.push({ taskBody: taskBody, finished: false });
+    tasks.push({ taskBody: taskBody, isFinished: false });
     inpAddTask.value = "";
     inpAddTask.blur();
     updateUI();
